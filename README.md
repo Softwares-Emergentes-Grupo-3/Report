@@ -6,7 +6,7 @@
 <br>
 
 <div align="center">
-  <img width=140 src="https://seeklogo.com/images/U/universidad-peruana-de-ciencias-aplicadas-upc-logo-B98C3A365C-seeklogo.com.png"/>
+  <img width=140 src="./assets/logos_upc/upc_logo.png"/>
 </div>
 
 <br>
@@ -80,7 +80,7 @@
 
 - [1.1. Startup Profile](#11-startup-profile)
   - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
-  - [1.1.2. Perfiles de integrantes del equipo](#121-antecedentes-y-problemática)
+  - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
 - [1.2. Solution Profile](#12-solution-profile)
   - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
   - [1.2.2 Lean UX Process](#122-lean-ux-process)
@@ -114,29 +114,28 @@
 - [3.3. Impact mapping](#33-impact-mapping)
 - [3.4. Product Backlog](#34-product-backlog)
 
-### [Capítulo IV: Solutions Software Design](#capítulo-iv-solution-software-design)
+### [Capítulo IV: Strategic-Level Software Design](#capítulo-iv-strategic-level-software-design-1)
 
-- [4.1. Strategic-Level Domain-Driven Design](#41-strategic-level-domain-driven-design)
-  - [4.1.1. Event Storming](#411-event-storming)
-    - [4.1.1.1. Candidate Context Discovery](#4111-candidate-context-discovery)
-    - [4.1.1.2. Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
-    - [4.1.1.3. Bounded COntext Canvases](#4113-bounded-context-canvases)
-  - [4.1.2. Context Mapping](#412-context-mapping)
-  - [4.1.3. Software Architecture](#413-software-architecture)
-    - [4.1.3.1. Software Architecture System Landscape Diagram](#4131-software-architecture-system-landscape-diagram)
-    - [4.1.3.2. Software Architecture Context Level Diagrams](#4132-software-architecture-context-level-diagrams)
-    - [4.1.3.3. Software Architecture Container Level Diagrams](#4133-software-architecture-container-level-diagrams)
-    - [4.1.3.4. Software Architecture Deployment Diagrams](#4134-software-architecture-deployment-diagrams)
-- [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
-  - [4.2.X. Bounded Context: <Bounded Context name>](#42x-bounded-context)
-    - [4.2.X.1. Domain Layer](#42x1-domain-layer)
-    - [4.2.X.2. Interface Layer](#42x2-interface-context)
-    - [4.2.X.3. Application Layer](#42x3-application-context)
-    - [4.2.X.4. Infrastructure Layer](#42x4-infrastructure-context)
-    - [4.2.X.5. Bounded Context Software Architecture Component Level Diagrams](#42x5-bounded-context-software-architecture-component-level-diagrams)
-    - [4.2.X.6. Bounded Context Software Architecture Code Level Diagrams](#42x6-bounded-context-software-architecture-code-level-diagrams)
-      - [4.2.X.6.1. Bounded Context Domain Layer Class Diagrams](#42x61-bounded-context-domain-layer-class-diagrams)
-      - [4.2.X.6.2. Bounded Context Database Design Diagram](#42x62-bounded-context-database-design-diagram)
+- [4.1. Strategic-Level Attribute-Driven Design](#41-strategic-level-attribute-driven-design)
+  - [4.1.1. Design Purpose](#411-design-purpose)
+  - [4.1.2. Attribute-Driven Design Inputs](#412-attribute-driven-design-inputs)
+    - [4.1.2.1. Primary Functionality (Primary User Stories)](#4121-primary-functionality-primary-user-stories)
+    - [4.1.2.2. Quality attribute Scenarios](#4122-quality-attribute-scenarios)
+    - [4.1.2.3. Constraints](#4123-constraints)
+  - [4.1.3. Architectural Drivers Backlog](#413-architectural-drivers-backlog)
+  - [4.1.4. Architectural Design Decisions](#414-architectural-design-decisions)
+  - [4.1.5. Quality Attribute Scenario Refinements](#415-quality-attribute-scenario-refinements)
+- [4.2. Strategic-Level Domain-Driven Design](#42-strategic-level-domain-driven-design)
+  - [4.2.1. EventStorming](#421-eventstorming)
+  - [4.2.2. Candidate Context Discovery](#422-candidate-context-discovery)
+  - [4.2.3. Domain Message Flows Modeling](#423-domain-message-flows-modeling)
+  - [4.2.4. Bounded Context Canvases](#424-bounded-context-canvases)
+  - [4.2.5. Context Mapping](#425-context-mapping)
+- [4.3. Software Architecture](#43-software-architecture)
+  - [4.3.1. Software Architecture System Landscape Diagram](#431-software-architecture-system-landscape-diagram)
+  - [4.3.2. Software Architecture Context Level Diagrams](#432-software-architecture-context-level-diagrams)
+  - [4.3.3. Software Architecture Container Level Diagrams](#433-software-architecture-container-level-diagrams)
+  - [4.3.4. Software Architecture Deployment Diagrams](#434-software-architecture-deployment-diagrams)
 
 ### [Conclusiones](#conclusiones-1)
 
@@ -153,7 +152,7 @@
 
 <b>ABET – EAC - Student Outcome 3:</b> Capacidad de comunicarse efectivamente con un rango de audiencias. 
 
-<table>
+<table align="center">
   <thead>
     <tr>
       <th>Criterio específico</th>
@@ -203,7 +202,9 @@
 
 ### 1.1.1. Descripción de la StartUp
 
-<table>
+### 1.1.2. Perfiles de integrantes del equipo
+
+<table align="center">
   <tr align="center">
     <td rowspan="4">
       <img src="./assets/profile_images/Diego_image.jpg" alt="Diego's profile image" min-width="400" max-width="900"/>
@@ -271,12 +272,12 @@
   </tr>
    <tr align="center">
     <td rowspan="4">
-      <img src="./assets/profile_images/Tatiana_image.jpg" alt="Tatiana's profile image" min-width="400" max-width="900"/>
+      <img src="./assets/profile_images/Diego_Defilippi-image.jpg" alt="Diego's profile image" min-width="400" max-width="900"/>
     </td>
     <td align="left">
       <b>Nombre y Apellido:</b>
       <br>            
-      Diego Felipe Defilippi Santillán	
+      Diego Defilippi Santillán	
     </td>
   </tr>
   <tr>
@@ -297,7 +298,7 @@
     <td align="left">
     <b>Acerca de:</b>
     <br>
-     -
+    Soy Diego Defilippi, tengo 22 años y tengo una gran pasión por la programación y el diseño de software. Desde hace cuatro años, estoy aprendiendo las diversas ramas de esta fascinante ingeniería, como el backend, frontend y data science. Además, siempre ando en búsqueda de soluciones creativas e innovadoras ante problemas cotidianos. Finalmente, me considero una persona autodidacta, organizada y con muchos ánimos de aprender.
     </td>
   </tr>
   </tr>
@@ -426,7 +427,7 @@
 
 # Capítulo IV: Strategic-Level Software Design
 
-## 4.1. Strategic-Level Domain-Driven Design
+## 4.1. Strategic-Level Attribute-Driven Design
 
 ### 4.1.1. Design Purpose
 
